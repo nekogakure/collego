@@ -1,0 +1,119 @@
+body {
+    user-select: none;
+    overflow: hidden;
+    background-image: url("static/wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: dodgerblue;
+}
+
+i {
+    color: gray;
+}
+
+button {
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#menubar {
+    height: 4vh;
+    background-color: black;
+    width: 100%;
+}
+
+#menubar button {
+    color: white;
+    background-color: transparent;
+}
+
+#menubar button:hover {
+    background-color: grey;
+}
+
+#desktop {
+    position: relative;
+    height: 96vh;
+    width: 100%;
+}
+
+#dummy {
+    height: 90vh;
+}
+
+#about {
+    top: 1vh;
+    left: 1vh;
+}
+
+#purpose {
+    top: 1vh;
+    right: 1vh;
+}
+
+#ideal {
+    bottom: 2vh;
+    right: 3vh;
+}
+
+#icon {
+    top: 1vh;
+    right: 65vh;
+}
+
+.window {
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.window .window-body {
+    height: 90%;
+    padding: 20px;
+    user-select: text;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.window .window-header {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: lightgray;
+    width: 100%;
+    height: 30px;
+}
+
+.window .window-header p {
+    padding-left: 10px;
+    display: inline;
+}
+
+.window .window-header .window-right-menu {
+    position: absolute;
+    padding-right: 10px;
+    right: 0px;
+    top: 10%;
+    display: inline;
+}
+
+.maximized {
+    left: 1vh !important;
+    top: 1vh !important;
+    height: 90vh !important;
+    width: 99vw !important;
+}
